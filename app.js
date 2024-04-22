@@ -28,7 +28,7 @@ const app = express();
 app.use(express.json());
 app.use(helmet());
 app.use(cors({
-  origin: ["http://localhost:3001"],
+  origin: ["http://localhost:3001", "https://nextjs-auth-sepia.vercel.app/"],
   credentials: true,
 }));
 app.use(cookieParser());
